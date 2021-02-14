@@ -11,4 +11,5 @@ Basic Linux HTTP client which can, currently, download single files off of websi
 2. Run make
 3. Run ./simple_http_client.out
 
+## Preview
 ![Preview](/preview.gif)
