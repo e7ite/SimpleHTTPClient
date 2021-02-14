@@ -159,12 +159,11 @@ int main(int argc, const char **argv)
     // return and line feed as another command if the neither the server or 
     // client closes the connection and returns a bad request
     char httpRequest[0x100];
-    int len = snprintf(httpRequest,
-                       sizeof httpRequest,
-                       "GET /%s HTTP/1.1\r\n"
-                           "Host: %s\r\nConnection: close\r\n\r\n",
-                       argv[3],
-                       argv[1]);
+    snprintf(httpRequest,
+             sizeof httpRequest,
+             "GET /%s HTTP/1.1\r\nHost: %s\r\nConnection: close\r\n\r\n",
+             argv[3],
+             argv[1]);
 
     // Attempt to deliver the HTTP request packet to the server
     if (!SendFull(connectionfd, httpRequest, strlen(httpRequest) + 1))
