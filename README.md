@@ -4,7 +4,7 @@
 Basic Linux HTTP client which can, currently, download single files off of websites
 
 ## Usage
-    -./simple_http_client.out <HOSTNAME> <PORTNO> <FILE>
+    ./simple_http_client.out <HOSTNAME> <PORTNO> <FILE>
 
 ## Build Instructions
 1. Install build-essential on your package manager 
