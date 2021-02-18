@@ -1,7 +1,7 @@
 [![Build status](https://ci.appveyor.com/api/projects/status/js3d2hnyf1u0papk?svg=true)](https://ci.appveyor.com/project/e7ite/simplehttpclient)
 
 # SimpleHTTPClient
-Basic Linux HTTP client which can, currently, download single files off of websites
+Basic Linux HTTP client which can send and receive HTTP 1.1 messages. It will make a GET request with whaterver file specified in first argument. Generally the port number will be 80 because that is the port number is reserved for HTTP. The output of the program will be sent to `stdout`. This can be redirected to a file to view on your favorite web browser.
 
 ## Usage
     ./simple_http_client.out <HOSTNAME> <PORTNO> <FILE>
